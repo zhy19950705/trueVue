@@ -1,6 +1,8 @@
 <template>
   <div>
     <div id="container-main">
+      <Websocket />
+      <el-button @click="sendMessage">发送websokect消息</el-button>
       <div
         v-for="bubble in bubbles"
         :key="bubble.id"
@@ -15,8 +17,12 @@
 
 <script>
 import E from "wangeditor";
+import Websocket from '../components/websocket'
 export default {
   name: "ContextMenu",
+  components: {
+    Websocket
+  },
   data() {
     let self = this;
     return {
@@ -106,6 +112,11 @@ export default {
         ];
       }
     });
+  },
+  methods: {
+    sendMessage(){
+      this.$socket.send('3333')
+    }
   }
 };
 </script>
