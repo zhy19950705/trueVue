@@ -11,7 +11,7 @@
     "core-js": "^2.6.5",
     "element-ui": "^2.9.1",
     "happypack": "^5.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "vue": "^2.6.10",
     "vue-native-websocket": "^2.0.13",
     "vue-router": "^3.0.6",
